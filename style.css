@@ -1,0 +1,202 @@
+     body{
+                     background: #222;
+            font-family: 'Nunito', sans-serif;
+            width: 90%;
+            margin: 0 auto
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            background: #0ca;
+             box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.8);
+            margin-top: 2vh;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+         border-bottom-right-radius: 5px;
+         border-bottom-left-radius: 5px;
+        }
+        .header h2{
+            color: antiquewhite;
+            font-size: 2em;
+            margin-left: 0;
+            font-weight: 700;
+        }
+        .figcont{
+            margin: .2em 0.1em .2em 4em;
+        }
+        .figcont img{
+            max-width: 70px;
+        }
+        .hero{
+           margin-top: .3em;
+        background: #444;
+        color: antiquewhite;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+       box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.8);
+          display: grid;
+        grid-template-columns: minmax(auto, 1024px);
+            justify-content: center;
+
+        }
+        .hero2{
+           margin-top: .2em;
+            margin-bottom: .2em;
+        background: #444;
+        color: antiquewhite;
+             border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+       box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.8);
+          display: grid;
+        grid-template-columns: minmax(auto, 1024px);
+            justify-content: center;
+
+        }
+        .herocont{
+            display: grid;
+            grid-template-columns: 80px 1fr 320px;
+            grid-template-areas: "badge title form"
+                                ". desc form"
+                                ". countdown form";
+            grid-gap: 10px;
+            border-left: 2px solid #222;  
+            border-right: 2px solid #222;  
+            margin: 0 auto;
+            padding: 1em;
+            box-shadow: 0px 0px 20px -5px rgba(0,0,0, 0.9);
+            
+        }
+        .badge{
+            grid-area: badge;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        .badge img{
+            max-width: 90px;
+            
+        }
+        .badge2{
+            grid-area: badge;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .badge2 img{
+            max-width: 65px;
+            
+        }
+        .title{
+            font-size: 2.5em;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            grid-area: title;
+        }
+        .desc{
+            grid-area: desc;
+            font-size: 1.2em;
+            color: #0ca
+        }
+        .desc span{
+            font-size: .7em;
+            color: antiquewhite;
+        }
+        .form{
+            text-align: center;
+            background: rgba(30, 30, 30, 0.7);
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.8);
+            grid-area: form
+                
+        }
+        .form input{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #888;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.7);
+            margin-top: 5px;
+            
+        }
+        .form p{
+            font-size: 1.8em;
+            font-weight: 700;
+            margin: 0.3em;
+            
+            
+        }
+        .form button{
+            background: #0ca;
+            color:antiquewhite;
+            font-family: 'Nunito', sans-serif;
+            margin-top: 1em;
+            border-radius: 5px;
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: .2em 1em;
+            border: none;
+            border-bottom: 2px solid #075;            
+            box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.7);
+						transition: .3s
+        }
+        .form button:hover{
+             background: #0db;
+            color: white;
+            box-shadow: 0px 0px 6px 3px;
+            cursor: pointer;
+        }
+        .countdown{
+            grid-area: countdown;
+        }
+        .countdown p{
+            font-weight: 700;
+            font-size: 1em;
+            text-align: center;
+            
+        }
+        .countdown span{
+            font-size: 1.2em;
+            
+            
+        }
+        .countdown span:after{
+            content: "/";
+            display: inline-block;
+            margin: 0 5px
+        }
+        .countdown span:last-child:after{
+            display: none;
+        }
+        p{
+            margin: 0;
+        }
+        .footer{
+            background: #0ca;
+            height: 2vh;
+             border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 0px 0px 6px 3px rgba(0,0,0, 0.8);
+            margin-bottom: 2vh;
+        }
+        @media screen and (max-width: 768px){
+            .herocont{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            grid-template-areas: "badge title"
+                                "desc desc"
+                                "form form"
+                                " countdown countdown";
+            grid-gap: 10px;
+        
+            }
+            .desc{
+                font-size: .3em;
+            }
+        }
